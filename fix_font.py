@@ -1,0 +1,8 @@
+f = open('style.css', 'r', encoding='utf-8')
+c = f.read()
+f.close()
+c = c.replace("font-family:'Playfair Display',serif", "font-family:'Poppins',sans-serif")
+f = open('style.css', 'w', encoding='utf-8')
+f.write(c)
+f.close()
+print('Done - replaced all Playfair Display with Poppins')
